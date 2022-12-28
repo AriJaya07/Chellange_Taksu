@@ -1,10 +1,32 @@
-# Getting Started with Create React App
+# React Todo CRUD App with Redux and Typescript
+Creating a todo application with CRUD operations using React, Redux-Toolkit, and Typescript. I going to be hosting it  on netlify to share it. 
+View [Live Demo](https://63ac142608fb7b568e5809fb--dainty-gnome-cdbbf6.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Creating React app using Typescript
+    npx create-react-app todo --template typescript
 
-## Available Scripts
+## Installation adding packages such as Redux and React-icon
+    npm i react-icons react-redux redux-persist @reduxjs/toolkit uuid
 
-In the project directory, you can run:
+### Create the components and redux folder and the files.
+Example: (src folder)
+1. components
+   - /AddTodo
+     - AddTodo.tsx
+   - /EditTodo
+     - EditTodo.tsx
+   - /FilterTodo
+     - FilterTodo.tsx
+   - TodoList
+     - /TodoItem
+        -TodoItem.tsx
+     - TodoList.tsx
+     
+2. Redux
+   - todo.tsx
+   - store.tsx
+
+## In the project directory, you can run:
 
 ### `npm start`
 
@@ -26,6 +48,28 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+## Log in to github and create new repository [Github](https://github.com/AriJaya07/Chellange_Taksu)
+In your terminal type following in the "<name_app>" directory
+### `git init`
+### `git add .`
+### `git commit -am "message"`
+### `Add remote origin of the repository you've created which looks like this, for instance: git remote add origin https://github.com/AriJaya07/Chellange_Taksu.git`
+### `git push -u origin master`
+if you look at your github account, the data will store in github account
+
+## Resource [Netlify](https://www.netlify.com/)
+This pushes the react code to Github which you should be able to see in your github account 
+### Login to Netlify if you've one else create new account which is very straightforward to do
+Do followings
+1. Click "Add new site" button which opens menu with 3 options
+2. Chose "Import an existing project" option
+3. Connect Netlify to your Github account by clicking Github button
+4. Click above the todo repository that you created
+5. Type "CI= npm run build" in the Build command input
+6. Click "Deploy site" button which deploys the website. It's going to take a few minutes. If everything goes well than application is hosted on the internet.
+7. It's live now. Share it with your friends or even better make it better
+
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
